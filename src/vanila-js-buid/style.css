@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  font-family: "PressStart2P", sans-serif;
+}
+
+* {
+  background-color: rgb(0, 0, 0);
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  color: white;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#score {
+  color: white;
+  font-family: "Press Start 2P";
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.body {
+  background-color: rgb(0, 0, 0);
+  min-height: 60vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+  background-color: rgb(0, 0, 0);
+  width: 70vmin;
+  height: 80vmin;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(19, 1fr);
+  padding: auto;
+}
+
+.wall {
+  background-color: rgb(93, 63, 211);
+}
+
+.food {
+  background-color: rgb(254, 198, 108);
+  width: 5px;
+  height: 5px;
+  margin: auto;
+}
+
+.freespace {
+  background-color: rgb(255, 157, 0);
+  width: 5px;
+  height: 5px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(5, 8px);
+  grid-template-columns: repeat(5, 8px);
+}
+
+.nofood {
+  background-color: rgb(0, 0, 0);
+  width: 10px;
+  height: 10px;
+  margin: auto;
+}
+
+.pac {
+  background-color: rgb(255, 204, 0);
+  border-radius: 50%;
+  margin: auto;
+  padding: auto;
+  width: 80%;
+  height: 80%;
+  transform: rotate(-90deg);
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%, 0 100%, 0 0);
+}
+
+.ghost1 {
+  background-color: red;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 100%,
+    82% 78%,
+    65% 100%,
+    49% 79%,
+    32% 100%,
+    16% 77%,
+    0 100%,
+    0 0
+  );
+  z-index: 1;
+}
+
+.ghost2 {
+  background-color: rgb(0, 38, 255);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 100%,
+    82% 78%,
+    65% 100%,
+    49% 79%,
+    32% 100%,
+    16% 77%,
+    0 100%,
+    0 0
+  );
+  z-index: 1;
+}
+
+.ghost3 {
+  background-color: rgb(149, 255, 0);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 100%,
+    82% 78%,
+    65% 100%,
+    49% 79%,
+    32% 100%,
+    16% 77%,
+    0 100%,
+    0 0
+  );
+  z-index: 1;
+}
+
+.ghost4 {
+  background-color: rgb(255, 0, 191);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 100%,
+    82% 78%,
+    65% 100%,
+    49% 79%,
+    32% 100%,
+    16% 77%,
+    0 100%,
+    0 0
+  );
+  z-index: 1;
+}
