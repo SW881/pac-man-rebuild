@@ -1,7 +1,6 @@
 <div align="center">
 <picture>
-    <source media="(prefers-color-scheme: dark)" alt="Petals 3d" />
-    <img alt="Excalidraw" src="./public/pacman.jpeg" />
+    <img alt="pac-man" src="./public/pacman.jpeg" />
   </picture>
 </div>
 
