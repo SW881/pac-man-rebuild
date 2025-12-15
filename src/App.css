@@ -14,3 +14,134 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+#header {
+  color: white;
+  font-size: 24px;
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
+#score {
+  color: white;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+#map {
+  background-color: rgb(0, 0, 0);
+  width: 70vmin;
+  height: 80vmin;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(19, 1fr);
+}
+
+.wall {
+  background-color: rgb(93, 63, 211);
+}
+
+.freespace {
+  background-color: rgb(255, 157, 0);
+  width: 5px;
+  height: 5px;
+  margin: auto;
+}
+
+.nofood {
+  background-color: rgb(0, 0, 0);
+}
+
+.pac {
+  background-color: rgb(255, 204, 0);
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%, 0 100%, 0 0);
+}
+
+.ghost1 {
+  background-color: red;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 100%,
+    82% 78%,
+    65% 100%,
+    49% 79%,
+    32% 100%,
+    16% 77%,
+    0 100%,
+    0 0
+  );
+}
+
+.ghost2 {
+  background-color: rgb(0, 38, 255);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 100%,
+    82% 78%,
+    65% 100%,
+    49% 79%,
+    32% 100%,
+    16% 77%,
+    0 100%,
+    0 0
+  );
+}
+
+.ghost3 {
+  background-color: rgb(149, 255, 0);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 100%,
+    82% 78%,
+    65% 100%,
+    49% 79%,
+    32% 100%,
+    16% 77%,
+    0 100%,
+    0 0
+  );
+}
+
+.ghost4 {
+  background-color: rgb(255, 0, 191);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 100%,
+    82% 78%,
+    65% 100%,
+    49% 79%,
+    32% 100%,
+    16% 77%,
+    0 100%,
+    0 0
+  );
+}
