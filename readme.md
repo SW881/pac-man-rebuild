@@ -10,10 +10,10 @@
   </h2>
 </div>
 
-### To run the project locally
+## To run the project locally
 
-```npm run dev
-
+```javascript
+npm run dev
 ```
 
 ## Features
